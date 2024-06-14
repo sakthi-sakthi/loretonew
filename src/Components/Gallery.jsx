@@ -62,22 +62,22 @@ const Gallery = () => {
         </header>
         <ul className="list-unstyled ifbFiltersList d-flex isoFiltersList mb-lg-12 fontAlter flex-wrap justify-content-center">
           <li className={filter === 'all' ? 'active' : ''} onClick={() => setFilter('all')}>
-            <a href="/">All</a>
+            <a href={() => false} style={{cursor:"pointer"}}>All</a>
           </li>
           <li className={filter === 'government' ? 'active' : ''} onClick={() => setFilter('government')}>
-            <a href="/">Government</a>
+            <a href={() => false} style={{cursor:"pointer"}}>Government</a>
           </li>
           <li className={filter === 'business' ? 'active' : ''} onClick={() => setFilter('business')}>
-            <a href="/">Business</a>
+            <a href={() => false} style={{cursor:"pointer"}}>Business</a>
           </li>
           <li className={filter === 'culture' ? 'active' : ''} onClick={() => setFilter('culture')}>
-            <a href="/">Culture</a>
+            <a href={() => false} style={{cursor:"pointer"}}>Culture</a>
           </li>
           <li className={filter === 'pubpla' ? 'active' : ''} onClick={() => setFilter('pubpla')}>
-            <a href="/">Public Places</a>
+            <a href={() => false} style={{cursor:"pointer"}}>Public Places</a>
           </li>
           <li className={filter === 'events' ? 'active' : ''} onClick={() => setFilter('events')}>
-            <a href="/">Events</a>
+            <a href={() => false} style={{cursor:"pointer"}}>Events</a>
           </li>
         </ul>
         <div className="row justify-content-center isoContentHolder mb-8">
