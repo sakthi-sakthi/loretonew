@@ -1,0 +1,13 @@
+@keyframes count {
+    from {
+      content: attr(data-start);
+    }
+    to {
+      content: attr(data-end);
+    }
+  }
+  
+  .dataCount {
+    animation: count 2s ease-out forwards;
+  }
+  
