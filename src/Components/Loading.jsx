@@ -14,9 +14,9 @@ const Loading = () => {
             >
                 <ThreeDots
                     visible={true}
-                    height="80"
-                    width="80"
-                    color="#06163a !important"
+                    height="60"
+                    width="60"
+                    color="#286b82"
                     radius="9"
                     ariaLabel="loading..."
                     wrapperStyle={{}}

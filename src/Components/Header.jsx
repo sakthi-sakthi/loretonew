@@ -1,10 +1,10 @@
 import React from 'react'
+import Banner from './Banner'
 
 const Header = () => {
     return (
         <>
             <div className="phStickyWrap">
-                {/* pageHeader */}
                 <header id="pageHeader" className="bg-white">
                     <div className="hdTopBar py-2 py-xl-3 bg-dark d-none d-md-block">
                         <div className="container">
@@ -47,15 +47,11 @@ const Header = () => {
                             </div>
                         </div>
                     </div>
+                    <Banner />
                     <div className="hdFixerWrap py-2 py-md-3 py-xl-5 sSticky bg-white">
                         <div className="container">
                             <nav className="navbar navbar-expand-md navbar-light p-0">
-                                <div className="logo flex-shrink-0 mr-3 mr-xl-8 mr-xlwd-16">
-                                    <a href="home.html">
-                                        <img src="https://loreto.in/assets/images/home/logo.png" className="img-fluid" alt="egovt" />
-                                    </a>
-                                </div>
-                                <div className="hdNavWrap flex-grow-1 d-flex align-items-center justify-content-end">
+                                <div className="hdNavWrap flex-grow-1 d-flex align-items-center justify-content-center">
                                     <div
                                         className="collapse navbar-collapse pageMainNavCollapse mt-2 mt-md-0"
                                         id="pageMainNavCollapse"
@@ -283,7 +279,7 @@ const Header = () => {
                                                     aria-haspopup="true"
                                                     aria-expanded="false"
                                                 >
-                                                    Mission
+                                                    Mission & Vission & Song
                                                 </a>
                                                 <div className="dropdown-menu hdMainDropdown desktopDropOnHover">
                                                     <ul className="list-unstyled mb-0 hdDropdownList">
@@ -322,7 +318,7 @@ const Header = () => {
                                                     aria-haspopup="true"
                                                     aria-expanded="false"
                                                 >
-                                                    Loreto Global
+                                                    Loreto Globally
                                                 </a>
                                                 <div className="dropdown-menu hdMainDropdown desktopDropOnHover">
                                                     <ul className="list-unstyled mb-0 hdDropdownList">
@@ -473,28 +469,13 @@ const Header = () => {
                                                     </ul>
                                                 </div>
                                             </li>
+                                            <li className="nav-item">
+                                                <a className="nav-link" href="contact-1.html">
+                                                    Contact us
+                                                </a>
+                                            </li>
                                         </ul>
                                     </div>
-                                </div>
-                                <div className="hdRighterWrap d-flex align-items-center justify-content-end">
-                                    <a
-                                        href="contact-1.html"
-                                        className="btn btn-outline-secondary bdrWidthAlter ml-3 ml-xl-6 btnHd d-none d-lg-block text-capitalize position-relative border-0 p-0"
-                                        data-hover="Contact Us"
-                                    >
-                                        <span className="d-block btnText">Contact Us</span>
-                                    </a>
-                                    <button
-                                        className="navbar-toggler pgNavOpener ml-2 bdrWidthAlter position-relative"
-                                        type="button"
-                                        data-toggle="collapse"
-                                        data-target="#pageMainNavCollapse"
-                                        aria-controls="pageMainNavCollapse"
-                                        aria-expanded="false"
-                                        aria-label="Toggle navigation"
-                                    >
-                                        <span className="navbar-toggler-icon" />
-                                    </button>
                                 </div>
                             </nav>
                         </div>

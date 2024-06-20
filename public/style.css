@@ -3908,7 +3908,7 @@ a.ui-button:active,
 
 .btn-outline-secondary:before,
 .btn-outline-secondary .btnText {
-    border-color: #06163a;
+    border-color: #286b82;
 }
 .btn-outline-secondary.btnTheme5Hover:before {
     color: #fff;
@@ -3928,7 +3928,7 @@ a.ui-button:active,
 
 .btnCustomLightOutline:before {
     border-color: #e0e0e0;
-    color: #06163a;
+    color: #286b82;
     background-color: #e0e0e0;
 }
 .btnCustomLightOutline .btnText {
@@ -3998,8 +3998,8 @@ a.ui-button:active,
 
 .btnBlack:before {
     color: #fff;
-    background-color: #06163a;
-    border-color: #06163a;
+    background-color: #286b82;
+    border-color: #286b82;
 }
 .btnBlack .btnText {
     color: #fff;
@@ -4068,8 +4068,8 @@ a.ui-button:active,
 
 .btn-dark:before {
     background-color: #fff;
-    border-color: #06163a;
-    color: #06163a;
+    border-color: #286b82;
+    color: #286b82;
 }
 .btn-dark.btnSwitchDark {
     background-color: rgba(6, 22, 58, 0.1);
@@ -4077,8 +4077,8 @@ a.ui-button:active,
     color: #202b5d;
 }
 .btn-dark.btnSwitchDark:before {
-    background-color: #06163a;
-    border-color: #06163a;
+    background-color: #286b82;
+    border-color: #286b82;
     color: #fff;
 }
 .btn-dark.hoverBlue:before {
@@ -4217,7 +4217,8 @@ textarea.form-control {
 body {
     -ms-overlfow-style: scrollbar;
     min-width: 320px;
-    font-family: math !important;
+    font-family: 'Cabin' !important;
+    /* background-image: url(https://www.usccb.org/themes/custom/ai/images/bg_page.jpg); */
 }
 
 h1 a,
@@ -4269,7 +4270,7 @@ h6 a,
 @media (min-width: 1230px) {
     h2,
     .h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
 
@@ -4490,7 +4491,7 @@ Page Wrapper / #pageWrapper
 }
 @media (min-width: 1230px) {
     .phStickyWrap {
-        min-height: 151px;
+        min-height: 123px;
     }
 }
 .home .phStickyWrap {
@@ -4524,6 +4525,7 @@ hdFixerWrap /.stickyWrap-sSticky
 .hdFixerWrap {
     -webkit-transition: all 0.35s ease;
     transition: all 0.35s ease;
+    background-color: #286b82 !important;
 }
 
 .hdScheduleList,
@@ -4543,7 +4545,7 @@ hdFixerWrap /.stickyWrap-sSticky
 }
 .hdTopBariii .hdScheduleList a:hover,
 .hdTopBariii .hdAlterLinksList a:hover {
-    color: #06163a;
+    color: #286b82;
 }
 .hdTopBariii .hdScheduleList .icn,
 .hdTopBariii .hdAlterLinksList .icn {
@@ -4586,7 +4588,7 @@ hdFixerWrap /.stickyWrap-sSticky
     color: inherit;
 }
 .hdAlterLinksList.hdAlterLinksListii a:hover {
-    color: #06163a;
+    color: #286b82;
 }
 .hdAlterLinksList li + li {
     margin-left: 10px;
@@ -4725,7 +4727,8 @@ hdFixerWrap /.stickyWrap-sSticky
 }
 @media (min-width: 1230px) {
     .mainNavigation .nav-link {
-        font-size: 18px;
+        font-size: 16px;
+        letter-spacing: 1px;
     }
 }
 .mainNavigation .dropIcn:after {
@@ -4894,7 +4897,7 @@ hdFixerWrap /.stickyWrap-sSticky
     }
 }
 .hdDropdownList a:hover {
-    color: #fff;
+    color: #ffd100;
 }
 .hdDropdownList .desktopDropOnHover {
     left: 100%;
@@ -4949,7 +4952,7 @@ hdFixerWrap /.stickyWrap-sSticky
 }
 @media (min-width: 1230px) {
     .hdMainDropdown {
-        margin-top: 42px;
+        margin-top: 17px;
         min-width: 185px;
         font-size: 17px;
         width: 15rem !important;
@@ -5592,7 +5595,7 @@ hdFixerWrap /.stickyWrap-sSticky
     }
 }
 .cfbFeatList .subtitle {
-    color: #a3a8b2;
+    color: #ffffff;
     font-size: 15px;
     line-height: 1.3;
 }
@@ -5677,8 +5680,7 @@ hdFixerWrap /.stickyWrap-sSticky
 }
 .ueScheduleList > li {
     position: relative;
-    padding-left: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 .ueScheduleList .icn {
     width: 18px;
@@ -5829,7 +5831,7 @@ hdFixerWrap /.stickyWrap-sSticky
 }
 .exploreResourceBlock:before {
     z-index: -1;
-    background-color: #06163a;
+    background-color: #286b82;
 }
 
 .erLinksList.bgTheme > li + li {
@@ -6153,6 +6155,7 @@ hdFixerWrap /.stickyWrap-sSticky
 @media (min-width: 576px) {
     .mccColumn {
         max-width: none;
+        height: 440px;
     }
 }
 .mccColumn h4,
@@ -6441,17 +6444,17 @@ hdFixerWrap /.stickyWrap-sSticky
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    background-color: #62718d;
+    background-color: #286b82;
     color: #fff;
     font-size: 15px;
     border-radius: 100%;
     -webkit-transition: color 0.3s ease, background-color 0.3s ease;
     transition: color 0.3s ease, background-color 0.3s ease;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 .hdSocialNetworks a:hover {
-    background-color: #06163a;
+    background-color: #286b82;
 }
 
 .pageMainHead {
@@ -10095,7 +10098,7 @@ hdFixerWrap /.stickyWrap-sSticky
 
 .ftAreaWrapvii {
     color: #f7f1f0;
-    background-color: #06163a;
+    background-color: #286b82;
 }
 .ftAreaWrapvii .ftConnectAside {
     background-color: #132244;
@@ -10552,7 +10555,7 @@ hdFixerWrap /.stickyWrap-sSticky
 
 .ftAreaWrapvii {
     color: #7b859d;
-    background-color: #06163a;
+    background-color: #286b82;
 }
 .ftAreaWrapvii .ftConnectAside {
     background-color: #132244;
@@ -11532,7 +11535,7 @@ hdFixerWrap /.stickyWrap-sSticky
 
 .causeGridCol .raised .income,
 .causeGridCol .raised .goal {
-    color: #06163a;
+    color: #286b82;
 }
 .causeGridCol .raised .income span:last-child,
 .causeGridCol .raised .goal span:last-child {
@@ -11541,7 +11544,7 @@ hdFixerWrap /.stickyWrap-sSticky
     font-weight: 300;
 }
 .causeGridCol .raised .ingo {
-    color: #06163a;
+    color: #286b82;
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -12230,7 +12233,7 @@ hdFixerWrap /.stickyWrap-sSticky
 }
 
 .header_v5 .hdTopBar {
-    background-color: #06163a;
+    background-color: #286b82;
 }
 
 /************************  
@@ -12374,7 +12377,7 @@ hdFixerWrap /.stickyWrap-sSticky
 }
 @media (min-width: 768px) {
     .topNews > span {
-        font-size: 17px;
+        font-size: 18px;
     }
 }
 @media (min-width: 992px) {
@@ -12392,7 +12395,7 @@ hdFixerWrap /.stickyWrap-sSticky
     height: 0;
     border-style: solid;
     border-width: 16.5px 14px 15.5px 0;
-    border-color: transparent #06163a transparent transparent;
+    border-color: transparent #286b82 transparent transparent;
 }
 
 .cityNewsSlider {
@@ -12401,6 +12404,7 @@ hdFixerWrap /.stickyWrap-sSticky
 @media (min-width: 768px) {
     .cityNewsSlider {
         font-size: 16px;
+        margin-top: 6px;
     }
 }
 .cityNewsSlider p {
@@ -15004,6 +15008,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     top: 37px;
     width: 70px;
     height: 4px;
+    border-radius: 2px;
+    background: #f6c93f;
+}
+
+.hrline {
+    content: "";
+    position: absolute;
+    top: 196px;
+    width: 73px;
+    height: 3px;
     border-radius: 2px;
     background: #f6c93f;
 }

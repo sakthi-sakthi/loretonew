@@ -11,7 +11,7 @@ const LatestNews = () => {
         const fetchData = async () => {
             try {
                 const response = await axios.get(`https://app.loreto.in/api/newsletter/province/1`);
-                setData(response?.data?.data);
+                setData(response?.data?.data?.slice(0, 3));
                 setLoading(false);
             } catch (error) {
                 console.log('Error fetching Data:', error);
@@ -20,7 +20,6 @@ const LatestNews = () => {
         };
         fetchData();
     }, []);
-
     if (loading) {
         return <div><p><b><center>Loading...</center></b></p></div>
     }

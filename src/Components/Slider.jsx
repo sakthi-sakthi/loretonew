@@ -19,10 +19,10 @@ const Slider = () => {
             className="carousel"
         >
             <div>
-                <img src="https://cms.loreto.in/slideimages/slide1.jpg" alt="1" />
+                <img src="https://cms.loreto.in/slideimages/slide2.jpg" alt="2" />
             </div>
             <div>
-                <img src="https://cms.loreto.in/slideimages/slide2.jpg" alt="2" />
+                <img src="https://cms.loreto.in/slideimages/slide1.jpg" alt="1" />
             </div>
             <div>
                 <img src="https://cms.loreto.in/slideimages/slide3.jpg" alt="3" />

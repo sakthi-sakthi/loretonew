@@ -47,16 +47,16 @@ const UpcomingEvents = () => {
                                                 <address>
                                                     <ul className="list-unstyled ueScheduleList">
                                                         <li>
-                                                            <i className="icomoon-clock icn position-absolute">
-                                                                <span className="sr-only">icon</span>
+                                                            <i className="fa fa-clock">
+                                                                &nbsp;&nbsp;<span className="sr-only">icon</span>
                                                             </i>
                                                             9:30am - 1:00pm
                                                         </li>
                                                         <li>
-                                                            <i className="icomoon-location icn position-absolute">
+                                                            <i className="fa fa-map-marker">
                                                                 <span className="sr-only">icon</span>
                                                             </i>
-                                                            Mayor Office, Texas city
+                                                            &nbsp;&nbsp;Mayor Office, Texas city
                                                         </li>
                                                     </ul>
                                                 </address>
@@ -102,16 +102,16 @@ const UpcomingEvents = () => {
                                                 <address>
                                                     <ul className="list-unstyled ueScheduleList">
                                                         <li>
-                                                            <i className="icomoon-clock icn position-absolute">
+                                                            <i className="fa fa-clock">
                                                                 <span className="sr-only">icon</span>
                                                             </i>
-                                                            1:00pm - 5:00pm
+                                                            &nbsp;&nbsp;1:00pm - 5:00pm
                                                         </li>
                                                         <li>
-                                                            <i className="icomoon-location icn position-absolute">
+                                                            <i className="fa fa-map-marker">
                                                                 <span className="sr-only">icon</span>
                                                             </i>
-                                                            32 Quincy Street, Cambridge, MA
+                                                            &nbsp;&nbsp;32 Quincy Street, Cambridge, MA
                                                         </li>
                                                     </ul>
                                                 </address>
@@ -157,16 +157,16 @@ const UpcomingEvents = () => {
                                                 <address>
                                                     <ul className="list-unstyled ueScheduleList">
                                                         <li>
-                                                            <i className="icomoon-clock icn position-absolute">
+                                                            <i className="fa fa-clock">
                                                                 <span className="sr-only">icon</span>
                                                             </i>
-                                                            9:30am - 1:00pm
+                                                            &nbsp;&nbsp;9:30am - 1:00pm
                                                         </li>
                                                         <li>
-                                                            <i className="icomoon-location icn position-absolute">
+                                                            <i className="fa fa-map-marker">
                                                                 <span className="sr-only">icon</span>
                                                             </i>
-                                                            Mayor Office, Texas city
+                                                            &nbsp;&nbsp;Mayor Office, Texas city
                                                         </li>
                                                     </ul>
                                                 </address>

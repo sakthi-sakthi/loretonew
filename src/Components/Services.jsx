@@ -64,15 +64,15 @@ const Services = () => {
                                                 <i className="fas fa-envelope icn mr-1">
                                                     <span className="sr-only">icon</span>
                                                 </i>
-                                                president@citygov.com
+                                                &nbsp;president@citygov.com
                                             </a>
                                         </li>
                                         <li>
                                             <a href="tel:+918002359595">
-                                                <i className="fas fa-phone-alt icn mr-1">
+                                                <i className="fas fa-phone icn mr-1">
                                                     <span className="sr-only">icon</span>
                                                 </i>
-                                                (+91) 800 235 9595
+                                                &nbsp;(+91) 800 235 9595
                                             </a>
                                         </li>
                                     </ul>
@@ -129,15 +129,15 @@ const Services = () => {
                                                 <i className="fas fa-envelope icn mr-1">
                                                     <span className="sr-only">icon</span>
                                                 </i>
-                                                auditor@citygov.com
+                                                &nbsp;auditor@citygov.com
                                             </a>
                                         </li>
                                         <li>
                                             <a href="tel:+918002359590">
-                                                <i className="fas fa-phone-alt icn mr-1">
+                                                <i className="fas fa-phone icn mr-1">
                                                     <span className="sr-only">icon</span>
                                                 </i>
-                                                (+91) 800 235 9590
+                                                &nbsp;(+91) 800 235 9590
                                             </a>
                                         </li>
                                     </ul>
@@ -196,15 +196,15 @@ const Services = () => {
                                                 <i className="fas fa-envelope icn mr-1">
                                                     <span className="sr-only">icon</span>
                                                 </i>
-                                                director@citygov.com
+                                                &nbsp;director@citygov.com
                                             </a>
                                         </li>
                                         <li>
                                             <a href="tel:+918002359591">
-                                                <i className="fas fa-phone-alt icn mr-1">
+                                                <i className="fas fa-phone icn mr-1">
                                                     <span className="sr-only">icon</span>
                                                 </i>
-                                                (+91) 800 235 9591
+                                                &nbsp;(+91) 800 235 9591
                                             </a>
                                         </li>
                                     </ul>
@@ -263,15 +263,15 @@ const Services = () => {
                                                 <i className="fas fa-envelope icn">
                                                     <span className="sr-only">icon</span>
                                                 </i>
-                                                collector@citygov.com
+                                                &nbsp;collector@citygov.com
                                             </a>
                                         </li>
                                         <li>
                                             <a href="tel:+918002359593">
-                                                <i className="fas fa-phone-alt icn">
+                                                <i className="fas fa-phone icn">
                                                     <span className="sr-only">icon</span>
                                                 </i>
-                                                (+91) 800 235 9593
+                                                &nbsp;(+91) 800 235 9593
                                             </a>
                                         </li>
                                     </ul>
