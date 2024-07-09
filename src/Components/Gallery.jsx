@@ -75,7 +75,7 @@ const Gallery = () => {
                   return (
                     <div key={index}>
                       <div className="birthday-box">
-                        <img className="img-responsive img-style" id="imgstyles" src={item.image} alt="img" />
+                        <img className="img-responsive img-style" id="imgstyles" src={item.image || 'https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg'} alt="img" />
                         <div className="emp_details">
                           <p style={{ color: '#337ab7' }}>{item.member_name}</p>
                           <p>{item.community_id}</p>
@@ -120,7 +120,7 @@ const Gallery = () => {
                 })}
                 {birthday.length >= 5 && (
                   <div style={{ textAlign: 'center', marginTop: '10px', fontSize: '12px' }}>
-                    <a href="https://app.loreto.in/member/birthdays" className="btn btn-primary btn-sm" style={{ borderRadius: '50px' }}>View All</a>
+                    <a href="/" className="btn btn-primary btn-sm" style={{ borderRadius: '50px' }}>View All</a>
                   </div>
                 )}
               </div>
