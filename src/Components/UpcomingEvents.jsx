@@ -17,7 +17,7 @@ const UpcomingEvents = () => {
                                             <div className="imgHolder position-relative">
                                                 <a href="/">
                                                     <img
-                                                        src="images/3.jpg"
+                                                        src="images/3.JPG"
                                                         className="img-fluid d-block w-100"
                                                         alt="No Data"
                                                     />
@@ -101,7 +101,7 @@ const UpcomingEvents = () => {
                                             <div className="imgHolder position-relative">
                                                 <a href="/">
                                                     <img
-                                                        src="images/8.jpg"
+                                                        src="images/8.JPG"
                                                         className="img-fluid d-block w-100"
                                                         alt="No Data"
                                                     />
