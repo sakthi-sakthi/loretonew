@@ -8,16 +8,32 @@ import moment from 'moment';
 const Gallery = () => {
   const images = [
     {
-      original: 'https://cms.loreto.in/storage/7/65fc053f6bce6_Photo_4558207.jpg',
-      thumbnail: 'https://cms.loreto.in/storage/7/65fc053f6bce6_Photo_4558207.jpg',
+      original: 'images/1.jpg',
+      thumbnail: 'images/1.jpg',
     },
     {
-      original: 'https://cms.loreto.in/storage/6/65fc053f3d39c_Photo_4557122.jpg',
-      thumbnail: 'https://cms.loreto.in/storage/6/65fc053f3d39c_Photo_4557122.jpg',
+      original: 'images/2.jpg',
+      thumbnail: 'images/2.jpg',
     },
     {
-      original: 'https://cms.loreto.in/storage/5/65fc053f07efd_Photo_4553239.jpg',
-      thumbnail: 'https://cms.loreto.in/storage/5/65fc053f07efd_Photo_4553239.jpg',
+      original: 'images/3.jpg',
+      thumbnail: 'images/3.jpg',
+    },
+    {
+      original: 'images/4.jpg',
+      thumbnail: 'images/4.jpg',
+    },
+    {
+      original: 'images/6.jpg',
+      thumbnail: 'images/6.jpg',
+    },
+    {
+      original: 'images/8.jpg',
+      thumbnail: 'images/8.jpg',
+    },
+    {
+      original: 'images/10.jpg',
+      thumbnail: 'images/10.jpg',
     },
   ];
 
@@ -28,7 +44,7 @@ const Gallery = () => {
       .get('https://app.loreto.in/api/member/province/birthday/this_month/1')
       .then((res) => {
         const currentDate = moment();
-        const filteredBirthdays = res.data.data.filter((item) => {
+        const filteredBirthdays = res?.data?.data?.filter((item) => {
           const birthdayDate = moment(item.dob, 'DD - MMMM');
           return birthdayDate.isSameOrAfter(currentDate, 'day');
         });
@@ -54,14 +70,12 @@ const Gallery = () => {
             <div className="col-lg-6">
               <header className="headingHead cdTitle mb-7 mb-md-13">
                 <h2 className="fwSemiBold mb-4">Our Gallery</h2>
-                <p>"The images about recent activities for our province"</p>
               </header>
               <ImageGallery items={images} />
             </div>
             <div className="col-lg-6">
               <header className="headingHead cdTitle mb-7 mb-md-13">
                 <h2 className="fwSemiBold mb-4">Upcoming Birthdays</h2>
-                <p>"Don't forget to wish them on their birthday!"</p>
               </header>
               <div
                 className="mousescroll"
@@ -69,17 +83,17 @@ const Gallery = () => {
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               >
-                {birthday.map((item, index) => {
+                {birthday?.map((item, index) => {
                   const birthdayDate = moment(item.dob, 'DD - MMMM').startOf('day');
                   const isToday = birthdayDate.isSame(today, 'day');
                   return (
                     <div key={index}>
                       <div className="birthday-box">
-                        <img className="img-responsive img-style" id="imgstyles" src={item.image || 'https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg'} alt="img" />
+                        <img className="img-responsive img-style" id="imgstyles" src={item?.image || 'https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg'} alt="img" />
                         <div className="emp_details">
-                          <p style={{ color: '#337ab7' }}>{item.member_name}</p>
-                          <p>{item.community_id}</p>
-                          <p>{item.dob}</p>
+                          <p style={{ color: '#337ab7' }}>{item?.member_name || 'No Name'}</p>
+                          <p>{item?.community_id || ''}</p>
+                          <p>{item?.dob || 'No DOB'}</p>
                         </div>
                         {isToday && (
                           <div style={{ marginTop: '-16%', marginLeft: '65%' }}>

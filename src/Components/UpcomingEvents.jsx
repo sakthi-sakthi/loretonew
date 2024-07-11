@@ -8,19 +8,16 @@ const UpcomingEvents = () => {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="pr-lg-8">
-                                <header className="headingHead text-center cdTitle mb-7 mb-md-13">
+                                <header className="headingHead cdTitle mb-7 mb-md-13">
                                     <h2 className="fwSemiBold mb-4">Latest News</h2>
-                                    <p>
-                                        The news about recent activities for our province
-                                    </p>
                                 </header>
                                 <div className="row">
                                     <div className="col-12 col-md-4">
                                         <article className="ueEveColumn position-relative shadow bg-white mb-6">
                                             <div className="imgHolder position-relative">
-                                                <a href="eventSingle.html">
+                                                <a href="/">
                                                     <img
-                                                        src="https://cms.loreto.in/storage/7/65fc053f6bce6_Photo_4558207.jpg"
+                                                        src="images/3.jpg"
                                                         className="img-fluid d-block w-100"
                                                         alt="No Data"
                                                     />
@@ -32,36 +29,23 @@ const UpcomingEvents = () => {
                                                     <span className="d-block text-white textDay flex-shrink-0 font-weight-bold">
                                                         01
                                                     </span>
-                                                    <span className="d-block py-2 px-3">OCT 2021</span>
+                                                    <span className="d-block py-2 px-3">AUG 2024</span>
                                                 </time>
                                             </div>
                                             <div className="ueDescriptionWrap pt-5 pb-8 px-5">
                                                 <strong className="d-block ueCatTitle fwSemiBold text-secondary mb-2">
-                                                    Upcoming Event
+                                                    Latest News
                                                 </strong>
                                                 <h3 className="h3Small fwMedium mb-3">
-                                                    <a href="eventSingle.html">
-                                                        Cultural Festival &amp; Concert at domanion
+                                                    <a href="/">
+                                                        Loreto Sisters Cultural Festival
                                                     </a>
                                                 </h3>
-                                                <address>
-                                                    <ul className="list-unstyled ueScheduleList">
-                                                        <li>
-                                                            <i className="fa fa-clock">
-                                                                &nbsp;&nbsp;<span className="sr-only">icon</span>
-                                                            </i>
-                                                            9:30am - 1:00pm
-                                                        </li>
-                                                        <li>
-                                                            <i className="fa fa-map-marker">
-                                                                <span className="sr-only">icon</span>
-                                                            </i>
-                                                            &nbsp;&nbsp;Mayor Office, Texas city
-                                                        </li>
-                                                    </ul>
-                                                </address>
+                                                <p className="ueDate mb-0">
+                                                    Loreto Sisters Cultural Festival is an annual cultural fest organized by Loreto in India.
+                                                </p>
                                                 <a
-                                                    href="eventSingle.html"
+                                                    href="/"
                                                     className="btn btnCustomLightOutline bdrWidthAlter btn-sm text-capitalize position-relative border-0 p-0 mt-3 align-top"
                                                     data-hover="More Details"
                                                 >
@@ -73,7 +57,7 @@ const UpcomingEvents = () => {
                                     <div className="col-12 col-md-4">
                                         <article className="ueEveColumn position-relative shadow bg-white mb-6">
                                             <div className="imgHolder position-relative">
-                                                <a href="eventSingle.html">
+                                                <a href="/">
                                                     <img
                                                         src="https://cms.loreto.in/storage/6/65fc053f3d39c_Photo_4557122.jpg"
                                                         className="img-fluid d-block w-100"
@@ -87,7 +71,7 @@ const UpcomingEvents = () => {
                                                     <span className="d-block text-white textDay flex-shrink-0 font-weight-bold">
                                                         15
                                                     </span>
-                                                    <span className="d-block py-2 px-3">OCT 2021</span>
+                                                    <span className="d-block py-2 px-3">SEP 2024</span>
                                                 </time>
                                             </div>
                                             <div className="ueDescriptionWrap pt-5 pb-8 px-5">
@@ -95,28 +79,15 @@ const UpcomingEvents = () => {
                                                     Upcoming Event
                                                 </strong>
                                                 <h3 className="h3Small fwMedium mb-3">
-                                                    <a href="eventSingle.html">
-                                                        Cultural Festival &amp; Concert at domanion
+                                                    <a href="/">
+                                                        Loreto Sisters Meetings
                                                     </a>
                                                 </h3>
-                                                <address>
-                                                    <ul className="list-unstyled ueScheduleList">
-                                                        <li>
-                                                            <i className="fa fa-clock">
-                                                                <span className="sr-only">icon</span>
-                                                            </i>
-                                                            &nbsp;&nbsp;1:00pm - 5:00pm
-                                                        </li>
-                                                        <li>
-                                                            <i className="fa fa-map-marker">
-                                                                <span className="sr-only">icon</span>
-                                                            </i>
-                                                            &nbsp;&nbsp;32 Quincy Street, Cambridge, MA
-                                                        </li>
-                                                    </ul>
-                                                </address>
+                                                <p className="ueDate mb-0">
+                                                    Loreto Sisters Meetings starts on 15 Sep 2024 at domanion in domanion city.
+                                                </p>
                                                 <a
-                                                    href="eventSingle.html"
+                                                    href="/"
                                                     className="btn btnCustomLightOutline bdrWidthAlter btn-sm text-capitalize position-relative border-0 p-0 mt-3 align-top"
                                                     data-hover="More Details"
                                                 >
@@ -128,9 +99,9 @@ const UpcomingEvents = () => {
                                     <div className="col-12 col-md-4">
                                         <article className="ueEveColumn position-relative shadow bg-white mb-6">
                                             <div className="imgHolder position-relative">
-                                                <a href="eventSingle.html">
+                                                <a href="/">
                                                     <img
-                                                        src="https://cms.loreto.in/storage/5/65fc053f07efd_Photo_4553239.jpg"
+                                                        src="images/8.jpg"
                                                         className="img-fluid d-block w-100"
                                                         alt="No Data"
                                                     />
@@ -142,36 +113,23 @@ const UpcomingEvents = () => {
                                                     <span className="d-block text-white textDay flex-shrink-0 font-weight-bold">
                                                         01
                                                     </span>
-                                                    <span className="d-block py-2 px-3">OCT 2021</span>
+                                                    <span className="d-block py-2 px-3">OCT 2024</span>
                                                 </time>
                                             </div>
                                             <div className="ueDescriptionWrap pt-5 pb-8 px-5">
                                                 <strong className="d-block ueCatTitle fwSemiBold text-secondary mb-2">
-                                                    Upcoming Event
+                                                    Latest News
                                                 </strong>
                                                 <h3 className="h3Small fwMedium mb-3">
-                                                    <a href="eventSingle.html">
-                                                        Cultural Festival &amp; Concert at domanion
+                                                    <a href="/">
+                                                        Loreto Sisters Monthly Retreat
                                                     </a>
                                                 </h3>
-                                                <address>
-                                                    <ul className="list-unstyled ueScheduleList">
-                                                        <li>
-                                                            <i className="fa fa-clock">
-                                                                <span className="sr-only">icon</span>
-                                                            </i>
-                                                            &nbsp;&nbsp;9:30am - 1:00pm
-                                                        </li>
-                                                        <li>
-                                                            <i className="fa fa-map-marker">
-                                                                <span className="sr-only">icon</span>
-                                                            </i>
-                                                            &nbsp;&nbsp;Mayor Office, Texas city
-                                                        </li>
-                                                    </ul>
-                                                </address>
+                                                <p className="ueDate mb-0">
+                                                    Loreto Sisters Monthly Retreat starts on 01 Oct 2024 at domanion in domanion city.
+                                                </p>
                                                 <a
-                                                    href="eventSingle.html"
+                                                    href="/"
                                                     className="btn btnCustomLightOutline bdrWidthAlter btn-sm text-capitalize position-relative border-0 p-0 mt-3 align-top"
                                                     data-hover="More Details"
                                                 >

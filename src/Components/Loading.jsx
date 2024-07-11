@@ -16,9 +16,9 @@ const Loading = () => {
                     visible={true}
                     height="60"
                     width="60"
-                    color="#286b82"
+                    color="#012c6d"
                     radius="9"
-                    ariaLabel="loading..."
+                    ariaLabel="Loreto Loading..."
                     wrapperStyle={{}}
                     wrapperClass=""
                 />

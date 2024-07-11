@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <>
-            <aside className="footerAside pt-9 pb-sm-2 pt-xl-14 pb-xl-12 mt-5" style={{ backgroundColor: 'rgb(40 107 130)' }}>
+            <aside className="footerAside pt-9 pb-sm-2 pt-xl-14 pb-xl-12 mt-5" style={{ backgroundColor: 'rgb(1 44 109)' }}>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-4 col-md-6 col-sm-12">
@@ -27,7 +27,7 @@ const Footer = () => {
                                 Institute founded by an English woman, Mary Ward.  We are known informally as Loreto Sisters. The IBVM comprised of three branches:
                             </p>
                             <a
-                                href="eventSingle.html"
+                                href="/"
                                 className="btn btnCustomLightOutline bdrWidthAlter btn-sm text-capitalize position-relative border-0 p-0 mt-3 align-top"
                                 data-hover="Read More"
                             >
@@ -127,7 +127,7 @@ const Footer = () => {
                             <div className="col-lg-12 col-md-6 col-sm-12">
                                 <div className="pl-xlwd-11">
                                     <a
-                                        href="eventSingle.html"
+                                        href="/"
                                         className="btn btnCustomLightOutline bdrWidthAlter btn-sm text-capitalize position-relative border-0 p-0 mt-5 align-top"
                                         data-hover="Download Brochure"
                                     >

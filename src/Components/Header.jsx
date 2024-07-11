@@ -6,7 +6,7 @@ const Header = () => {
         <>
             <div className="phStickyWrap">
                 <header id="pageHeader" className="bg-white">
-                    <div className="hdTopBar py-2 py-xl-3 bg-dark d-none d-md-block">
+                    <div className="hdTopBar py-2 py-xl-3 bg-dark d-md-block">
                         <div className="container">
                             <div className="row align-items-center">
                                 <div className="col-9 col-lgwd-8">

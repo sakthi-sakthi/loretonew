@@ -32,11 +32,8 @@ const LatestNews = () => {
         <>
             <section className="newsPulicationsBlock position-relative bg-light overflow-hidden pt-7 pb-4 pt-md-10 pb-md-4 pt-lg-16 pb-lg-10 pt-xl-22 pb-xl-16">
                 <div className="container position-relative npbHolder">
-                    <header className="headingHead text-center cdTitle mb-7 mb-md-13">
-                        <h2 className="fwSemiBold mb-4">Latest Newsletters</h2>
-                        <p>
-                            "United in Governance, Leading Our Nation Forward"
-                        </p>
+                    <header className="headingHead cdTitle mb-7 mb-md-13">
+                        <h2 className="fwSemiBold mb-4">Monthly Newsletter</h2>
                     </header>
                     <div className='row'>
                         {data?.map((item, index) => (
@@ -45,9 +42,10 @@ const LatestNews = () => {
                                     <div className="d-flex mb-3">
                                         <span className="icnWrap flex-shrink-0 pt-1 mr-3">
                                             <img
-                                                src="images/icodoc.png"
+                                                src="images/document.png"
                                                 className="img-fluid"
                                                 alt="icon"
+                                                style={{ height: '50px' }}
                                             />
                                         </span>
                                         <div className="descrWrap">

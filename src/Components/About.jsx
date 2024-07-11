@@ -21,7 +21,7 @@ const About = () => {
                                 <center>
                                     <a
                                         href="services.html"
-                                        className="btn btn-dark text-capitalize position-relative border-0 p-0 mt-4 mt-sm-0 mb-sm-1 minWidthMedium"
+                                        className="btn btn-dark btn-sm text-capitalize position-relative border-0 p-0 mt-4 mt-sm-0 mb-sm-1"
                                         data-hover="Read More"
                                     >
                                         <span className="d-block btnText">Read More</span>

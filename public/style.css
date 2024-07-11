@@ -3908,7 +3908,7 @@ a.ui-button:active,
 
 .btn-outline-secondary:before,
 .btn-outline-secondary .btnText {
-    border-color: #286b82;
+    border-color: #012c6d;
 }
 .btn-outline-secondary.btnTheme5Hover:before {
     color: #fff;
@@ -3928,7 +3928,7 @@ a.ui-button:active,
 
 .btnCustomLightOutline:before {
     border-color: #e0e0e0;
-    color: #286b82;
+    color: #012c6d;
     background-color: #e0e0e0;
 }
 .btnCustomLightOutline .btnText {
@@ -3998,8 +3998,8 @@ a.ui-button:active,
 
 .btnBlack:before {
     color: #fff;
-    background-color: #286b82;
-    border-color: #286b82;
+    background-color: #012c6d;
+    border-color: #012c6d;
 }
 .btnBlack .btnText {
     color: #fff;
@@ -4068,8 +4068,8 @@ a.ui-button:active,
 
 .btn-dark:before {
     background-color: #fff;
-    border-color: #286b82;
-    color: #286b82;
+    border-color: #012c6d;
+    color: #012c6d;
 }
 .btn-dark.btnSwitchDark {
     background-color: rgba(6, 22, 58, 0.1);
@@ -4077,8 +4077,8 @@ a.ui-button:active,
     color: #202b5d;
 }
 .btn-dark.btnSwitchDark:before {
-    background-color: #286b82;
-    border-color: #286b82;
+    background-color: #012c6d;
+    border-color: #012c6d;
     color: #fff;
 }
 .btn-dark.hoverBlue:before {
@@ -4270,7 +4270,7 @@ h6 a,
 @media (min-width: 1230px) {
     h2,
     .h2 {
-        font-size: 2rem;
+        font-size: 26px;
     }
 }
 
@@ -4525,7 +4525,7 @@ hdFixerWrap /.stickyWrap-sSticky
 .hdFixerWrap {
     -webkit-transition: all 0.35s ease;
     transition: all 0.35s ease;
-    background-color: #286b82 !important;
+    background-color: #012c6d !important;
 }
 
 .hdScheduleList,
@@ -4545,7 +4545,7 @@ hdFixerWrap /.stickyWrap-sSticky
 }
 .hdTopBariii .hdScheduleList a:hover,
 .hdTopBariii .hdAlterLinksList a:hover {
-    color: #286b82;
+    color: #012c6d;
 }
 .hdTopBariii .hdScheduleList .icn,
 .hdTopBariii .hdAlterLinksList .icn {
@@ -4588,7 +4588,7 @@ hdFixerWrap /.stickyWrap-sSticky
     color: inherit;
 }
 .hdAlterLinksList.hdAlterLinksListii a:hover {
-    color: #286b82;
+    color: #012c6d;
 }
 .hdAlterLinksList li + li {
     margin-left: 10px;
@@ -5831,7 +5831,7 @@ hdFixerWrap /.stickyWrap-sSticky
 }
 .exploreResourceBlock:before {
     z-index: -1;
-    background-color: #286b82;
+    background-color: #012c6d;
 }
 
 .erLinksList.bgTheme > li + li {
@@ -6444,7 +6444,7 @@ hdFixerWrap /.stickyWrap-sSticky
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    background-color: #286b82;
+    background-color: #012c6d;
     color: #fff;
     font-size: 15px;
     border-radius: 100%;
@@ -6454,7 +6454,7 @@ hdFixerWrap /.stickyWrap-sSticky
     height: 25px;
 }
 .hdSocialNetworks a:hover {
-    background-color: #286b82;
+    background-color: #012c6d;
 }
 
 .pageMainHead {
@@ -10098,7 +10098,7 @@ hdFixerWrap /.stickyWrap-sSticky
 
 .ftAreaWrapvii {
     color: #f7f1f0;
-    background-color: #286b82;
+    background-color: #012c6d;
 }
 .ftAreaWrapvii .ftConnectAside {
     background-color: #132244;
@@ -10555,7 +10555,7 @@ hdFixerWrap /.stickyWrap-sSticky
 
 .ftAreaWrapvii {
     color: #7b859d;
-    background-color: #286b82;
+    background-color: #012c6d;
 }
 .ftAreaWrapvii .ftConnectAside {
     background-color: #132244;
@@ -11535,7 +11535,7 @@ hdFixerWrap /.stickyWrap-sSticky
 
 .causeGridCol .raised .income,
 .causeGridCol .raised .goal {
-    color: #286b82;
+    color: #012c6d;
 }
 .causeGridCol .raised .income span:last-child,
 .causeGridCol .raised .goal span:last-child {
@@ -11544,7 +11544,7 @@ hdFixerWrap /.stickyWrap-sSticky
     font-weight: 300;
 }
 .causeGridCol .raised .ingo {
-    color: #286b82;
+    color: #012c6d;
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -12233,7 +12233,7 @@ hdFixerWrap /.stickyWrap-sSticky
 }
 
 .header_v5 .hdTopBar {
-    background-color: #286b82;
+    background-color: #012c6d;
 }
 
 /************************  
@@ -12395,7 +12395,7 @@ hdFixerWrap /.stickyWrap-sSticky
     height: 0;
     border-style: solid;
     border-width: 16.5px 14px 15.5px 0;
-    border-color: transparent #286b82 transparent transparent;
+    border-color: transparent #012c6d transparent transparent;
 }
 
 .cityNewsSlider {
