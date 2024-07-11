@@ -8,32 +8,32 @@ import moment from 'moment';
 const Gallery = () => {
   const images = [
     {
-      original: 'images/1.jpg',
-      thumbnail: 'images/1.jpg',
+      original: 'images/1.JPG',
+      thumbnail: 'images/1.JPG',
     },
     {
-      original: 'images/2.jpg',
-      thumbnail: 'images/2.jpg',
+      original: 'images/2.JPG',
+      thumbnail: 'images/2.JPG',
     },
     {
-      original: 'images/3.jpg',
-      thumbnail: 'images/3.jpg',
+      original: 'images/3.JPG',
+      thumbnail: 'images/3.JPG',
     },
     {
-      original: 'images/4.jpg',
-      thumbnail: 'images/4.jpg',
+      original: 'images/4.JPG',
+      thumbnail: 'images/4.JPG',
     },
     {
-      original: 'images/6.jpg',
-      thumbnail: 'images/6.jpg',
+      original: 'images/6.JPG',
+      thumbnail: 'images/6.JPG',
     },
     {
-      original: 'images/8.jpg',
-      thumbnail: 'images/8.jpg',
+      original: 'images/8.JPG',
+      thumbnail: 'images/8.JPG',
     },
     {
-      original: 'images/10.jpg',
-      thumbnail: 'images/10.jpg',
+      original: 'images/10.JPG',
+      thumbnail: 'images/10.JPG',
     },
   ];
 
@@ -89,7 +89,7 @@ const Gallery = () => {
                   return (
                     <div key={index}>
                       <div className="birthday-box">
-                        <img className="img-responsive img-style" id="imgstyles" src={item?.image || 'https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg'} alt="img" />
+                        <img className="img-responsive img-style" id="imgstyles" src={item?.image || 'https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.JPG'} alt="img" />
                         <div className="emp_details">
                           <p style={{ color: '#337ab7' }}>{item?.member_name || 'No Name'}</p>
                           <p>{item?.community_id || ''}</p>
