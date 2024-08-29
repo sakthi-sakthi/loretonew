@@ -12,7 +12,7 @@ const FlashNews = () => {
                                 <div className="cityNewsSlider w-100">
                                     <div className='text-white'>
                                          {/* eslint-disable-next-line jsx-a11y/no-distracting-elements */}
-                                        <marquee>
+                                        <marquee style={{marginTop:"10px"}}>
                                             <i className="icn fa fa-star" aria-hidden="true" /> WELCOME TO INSTITUTE OF BLESSED VIRIGIN MARY <i className="icn fa fa-star" aria-hidden="true" />
                                         </marquee>
                                     </div>

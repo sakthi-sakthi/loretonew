@@ -9,7 +9,7 @@
 .welcome-content .entry-title {
     position: relative;
     padding-bottom: 24px;
-    font-size: 33px;
+    font-size: 22px;
     color: #012c6d;
     text-align: center;
     font-family: 'Cabin' !important;
@@ -21,7 +21,7 @@
 }
 
 .welcome-content .entry-content {
-    font-size: 22px;
+    font-size: 16px;
     line-height: 2;
     color: #262626;
     font-family: 'Cabin' !important;

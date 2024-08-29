@@ -3,7 +3,7 @@ import axios from 'axios';
 import moment from 'moment';
 import './css/Card.css';
 
-const LatestNews = () => {
+const Newsletter = () => {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(null);
 
@@ -58,7 +58,7 @@ const LatestNews = () => {
                                         </div>
                                         <span className="ml-auto">
                                             <a href={item?.upload} download>
-                                                <img src='https://static.vecteezy.com/system/resources/previews/022/361/832/original/3d-pdf-file-icon-illustration-png.png' style={{ height: '60px' }} alt="nodata"></img>
+                                                <img src='images/df.webp' style={{ height: '60px' }} alt="nodata"></img>
                                             </a>
                                         </span>
                                     </div>
@@ -93,4 +93,4 @@ const LatestNews = () => {
     );
 }
 
-export default LatestNews;
+export default Newsletter;

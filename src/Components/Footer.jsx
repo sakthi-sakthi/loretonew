@@ -26,13 +26,6 @@ const Footer = () => {
                             <p className='text-white text-justify'>
                                 Institute founded by an English woman, Mary Ward.  We are known informally as Loreto Sisters. The IBVM comprised of three branches:
                             </p>
-                            <a
-                                href="/"
-                                className="btn btnCustomLightOutline bdrWidthAlter btn-sm text-capitalize position-relative border-0 p-0 mt-3 align-top"
-                                data-hover="Read More"
-                            >
-                                <span className="d-block btnText text-white" style={{borderRadius: '50px'}}>Read More</span>
-                            </a>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12">
                             <div className="pl-xlwd-11">
@@ -65,47 +58,6 @@ const Footer = () => {
                                         </p>
                                     </li>
                                 </ul>
-                                <div className='section-headings mt-5'>
-                                    <h3 className="ftHeading text-white mb-4">Follow Us</h3>
-                                    <hr className="hrline" />
-                                </div>
-                                <ul className="list-unstyled socialNetworks hdSocialNetworks d-flex justify-content flex-wrap mb-0">
-                                    <li>
-                                        <a href="/">
-                                            <i className="fab fa-facebook-square">
-                                                <span className="sr-only">facebook</span>
-                                            </i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/">
-                                            <i className="fab fa-twitter">
-                                                <span className="sr-only">twitter</span>
-                                            </i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/">
-                                            <i className="fab fa-instagram">
-                                                <span className="sr-only">instagram</span>
-                                            </i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/">
-                                            <i className="fab fa-linkedin">
-                                                <span className="sr-only">linkedin</span>
-                                            </i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/">
-                                            <i className="fab fa-youtube">
-                                                <span className="sr-only">youtube</span>
-                                            </i>
-                                        </a>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12">
@@ -116,24 +68,13 @@ const Footer = () => {
                                 <ul className="list-unstyled ftsrLinksList mb-0">
                                     <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.7730007234613!2d88.34968917593255!3d22.550174633790775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02771079019917%3A0x936dfcbc761465b5!2s7%2C%20Sir%20William%20Jones%20Sarani%2C%20Park%20Street%20area%2C%20Kolkata%2C%20West%20Bengal%20700071!5e0!3m2!1sen!2sin!4v1710998858380!5m2!1sen!2sin"
-                                        style={{ border: 0, height: '180px', width: "300px" }}
+                                        style={{ border: 0, height: '150px', width: "300px" }}
                                         allowFullScreen=""
                                         loading="lazy"
                                         title='loreto'
                                         referrerPolicy="no-referrer-when-downgrade"
                                     />
                                 </ul>
-                            </div>
-                            <div className="col-lg-12 col-md-6 col-sm-12">
-                                <div className="pl-xlwd-11">
-                                    <a
-                                        href="/"
-                                        className="btn btnCustomLightOutline bdrWidthAlter btn-sm text-capitalize position-relative border-0 p-0 mt-5 align-top"
-                                        data-hover="Download Brochure"
-                                    >
-                                        <span className="d-block btnText text-white" style={{borderRadius: '50px'}}><i className='fa fa-download'></i> Download Brochure</span>
-                                    </a>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -151,7 +92,6 @@ const Footer = () => {
                     </p>
                 </div>
             </footer>
-
         </>
     )
 }

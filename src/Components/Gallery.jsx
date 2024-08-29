@@ -4,52 +4,34 @@ import './css/gallerystyle.css';
 import './css/newstyle.css';
 import axios from 'axios';
 import moment from 'moment';
+import { ApiUrl, ReligioUrl } from '../Api/ApiUrl';
 
 const Gallery = () => {
-  const images = [
-    {
-      original: 'images/1.JPG',
-      thumbnail: 'images/1.JPG',
-    },
-    {
-      original: 'images/2.JPG',
-      thumbnail: 'images/2.JPG',
-    },
-    {
-      original: 'images/3.JPG',
-      thumbnail: 'images/3.JPG',
-    },
-    {
-      original: 'images/4.JPG',
-      thumbnail: 'images/4.JPG',
-    },
-    {
-      original: 'images/6.JPG',
-      thumbnail: 'images/6.JPG',
-    },
-    {
-      original: 'images/8.JPG',
-      thumbnail: 'images/8.JPG',
-    },
-    {
-      original: 'images/10.JPG',
-      thumbnail: 'images/10.JPG',
-    },
-  ];
-
+  const [images, setImages] = useState([]);
   const [birthday, setBirthday] = useState([]);
 
   useEffect(() => {
-    axios
-      .get('https://app.loreto.in/api/member/province/birthday/this_month/1')
-      .then((res) => {
+    axios.get(`${ApiUrl}/get/gallery_images`)
+      .then(res => {
+        const fetchedImages = res?.data?.data?.map(img => ({
+          original: img.image,
+          thumbnail: img.image,
+        }));
+        setImages(fetchedImages);
+      })
+      .catch(error => console.error('Error fetching gallery images:', error));
+
+    // Fetch birthdays
+    axios.get(`${ReligioUrl}/member/province/birthday/this_month/1`)
+      .then(res => {
         const currentDate = moment();
         const filteredBirthdays = res?.data?.data?.filter((item) => {
           const birthdayDate = moment(item.dob, 'DD - MMMM');
           return birthdayDate.isSameOrAfter(currentDate, 'day');
         });
         setBirthday(filteredBirthdays.slice(0, 5));
-      });
+      })
+      .catch(error => console.error('Error fetching birthdays:', error));
   }, []);
 
   const today = moment().startOf('day');
@@ -77,6 +59,13 @@ const Gallery = () => {
               <header className="headingHead cdTitle mb-7 mb-md-13">
                 <h2 className="fwSemiBold mb-4">Upcoming Birthdays</h2>
               </header>
+              {birthday?.length === 0 && (
+                <div className="row">
+                  <div className="col-12">
+                    <p><b>No Birthday Available</b></p>
+                  </div>
+                </div>
+              )}
               <div
                 className="mousescroll"
                 id="scroll_this"
@@ -89,7 +78,7 @@ const Gallery = () => {
                   return (
                     <div key={index}>
                       <div className="birthday-box">
-                        <img className="img-responsive img-style" id="imgstyles" src={item?.image || 'https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg'} alt="img" />
+                        <img className="img-responsive img-style" id="imgstyles" src={item?.image || 'images/noimage.avif'} alt="img" />
                         <div className="emp_details">
                           <p style={{ color: '#337ab7' }}>{item?.member_name || 'No Name'}</p>
                           <p>{item?.community_id || ''}</p>
@@ -100,7 +89,7 @@ const Gallery = () => {
                             <div className="birth_style">
                               <div style={{ position: 'relative' }}>
                                 <img
-                                  src="https://bsofterp.boscosofttech.com/bsf_website/static/src/img/graphics-happy-birthday.gif"
+                                  src="images/bday.gif"
                                   style={{
                                     height: 'auto',
                                     width: '100px',
@@ -111,7 +100,7 @@ const Gallery = () => {
                                   alt="nodata"
                                 />
                                 <img
-                                  src="https://img1.picmix.com/output/stamp/normal/8/1/8/0/1540818_fa9b6.gif"
+                                  src="images/popper.gif"
                                   style={{
                                     position: 'absolute',
                                     top: '17px',

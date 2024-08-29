@@ -381,7 +381,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-    font-size: 1.5rem;
+    font-size: 18px;
 }
 
 h4, .h4 {
@@ -12339,7 +12339,7 @@ button.bg-dark:focus {
 
 .pb-8,
 .py-8 {
-    padding-bottom: 40px !important;
+    padding-bottom: 20px !important;
 }
 
 .pl-8,
@@ -23380,7 +23380,7 @@ button.bg-dark:focus {
     }
     .pb-lg-10,
     .py-lg-10 {
-        padding-bottom: 50px !important;
+        padding-bottom: 0px !important;
     }
     .pl-lg-10,
     .px-lg-10 {
@@ -30349,7 +30349,7 @@ button.bg-dark:focus {
     }
     .pt-xl-11,
     .py-xl-11 {
-        padding-top: 55px !important;
+        padding-top: 20px !important;
     }
     .pr-xl-11,
     .px-xl-11 {
@@ -30376,7 +30376,7 @@ button.bg-dark:focus {
     }
     .pb-xl-12,
     .py-xl-12 {
-        padding-bottom: 16px !important;
+        padding-bottom: 0px !important;
     }
     .pl-xl-12,
     .px-xl-12 {
@@ -43063,6 +43063,7 @@ button.bg-dark:focus {
 
 .text-white {
     color: #fff !important;
+    font-size: 14px;
 }
 
 .text-primary {
