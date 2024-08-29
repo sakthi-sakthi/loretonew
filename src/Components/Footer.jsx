@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -16,18 +17,42 @@ const Footer = () => {
                                         className="footer-logo"
                                         src="https://loreto.in/assets/images/home/logo.png"
                                         alt="footer logo"
-                                        style={{ height: '100px', width: '30rem' }}
+                                        style={{ height: '90px', width: '30rem' }}
                                     />
                                 </a>
                                 &nbsp;<p className='text-white text-justify'>
-                                    We are a community of religious women, belonging to the Institute of the Blessed Virgin Mary a multicultural , International
+                                    We are a community of religious women, belonging to the Institute of the Blessed Virgin Mary a multicultural,International Institute founded by an English woman, Mary Ward.
                                 </p>
                             </div>
                             <p className='text-white text-justify'>
-                                Institute founded by an English woman, Mary Ward.  We are known informally as Loreto Sisters. The IBVM comprised of three branches:
+                                We are known informally as Loreto Sisters. The IBVM comprised of three branches:
                             </p>
                         </div>
-                        <div className="col-lg-4 col-md-6 col-sm-12">
+                        <div className="col-lg-2 col-md-6 col-sm-12">
+                            <div className="pl-xlwd-11">
+                                <div className='section-headings'>
+                                    <h3 className="ftHeading text-white mb-4">Quick Links</h3>
+                                </div>
+                                <ul className="list-unstyled ftsrLinksList mb-0 text-white">
+                                    <li>
+                                        <Link to={'/aboutus'}> History</Link>
+                                    </li>
+                                    <li>
+                                        <Link to={'/newsletter'}> Newsletter</Link>
+                                    </li>
+                                    <li>
+                                        <Link to={'/loreto-india'}> Loreto in India</Link>
+                                    </li>
+                                    <li>
+                                        <Link to={'/fcra'}> Education</Link>
+                                    </li>
+                                    <li>
+                                        <Link to={'/contactus'}> Contact Us</Link>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-sm-12">
                             <div className="pl-xlwd-11">
                                 <div className='section-headings'>
                                     <h3 className="ftHeading text-white mb-4">Contact Us</h3>
@@ -60,7 +85,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 col-sm-12">
+                        <div className="col-lg-3 col-md-6 col-sm-12">
                             <div className="pl-xlwd-11">
                                 <div className='section-headings'>
                                     <h3 className="ftHeading text-white mb-4">Our Location</h3>

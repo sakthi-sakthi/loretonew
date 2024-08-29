@@ -4,6 +4,7 @@ import { Outlet } from "react-router-dom";
 import { ThreeDots } from "react-loader-spinner";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import { ApiUrl } from "../Api/ApiUrl";
 
 const MainLayout = () => {
     const [loading, setLoading] = useState(true);
@@ -38,7 +39,7 @@ const MainLayout = () => {
                     visible={true}
                     width="50"
                     height="50"
-                    color="#800000"
+                    color="#012c6d !important"
                     ariaLabel="three-dots-loading"
                 />
             </div>
@@ -48,7 +49,7 @@ const MainLayout = () => {
     return (
         <>
             <Header menudata={homedata?.headermenudata} />
-            <div style={{ minHeight: "66.5vh", padding: "10px", marginTop: "100px" }}>
+            <div style={{ minHeight: "66.5vh", padding: "10px"}}>
                 <Outlet />
             </div>
             <Footer />

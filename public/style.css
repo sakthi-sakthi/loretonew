@@ -4328,6 +4328,7 @@ body {
     -ms-overlfow-style: scrollbar;
     min-width: 320px;
     font-family: 'Cabin' !important;
+    background-color: #f2f2f2;
     /* background-image: url(https://www.usccb.org/themes/custom/ai/images/bg_page.jpg); */
 }
 
@@ -16620,4 +16621,61 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     height: 3px;
     border-radius: 2px;
     background: #f6c93f;
+}
+
+/* sub page design */
+.sub-page-title {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+.contact-us form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px 20px 20px 20px;
+}
+.contact-us form input {
+    width: 100%;
+    height: 70px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 100px;
+    padding: 0 35px;
+    font-size: 17px;
+}
+input, button {
+    font-family: "Karla", sans-serif;
+}
+.contact-us form textarea {
+    font-size: 17px;
+    height: 190px;
+    border-radius: 30px;
+    padding: 35px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    font-family: inherit;
+    font-family: "Karla", sans-serif;
+}
+textarea {
+    resize: vertical;
+}
+.contact-us form button {
+    margin-top: 10px;
+    cursor: pointer;
+}
+.theme-btn {
+    font-size: 14px;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-flex;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    border: 0;
 }

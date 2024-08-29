@@ -44,7 +44,7 @@ const Home = () => {
                         visible={true}
                         width={50}
                         height={50}
-                        color="#800000"
+                        color="#012c6d !important"
                         ariaLabel="ThreeDots-loading"
                     />
                 </div>
