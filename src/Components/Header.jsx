@@ -18,10 +18,10 @@ const Header = ({ menudata }) => {
     return (
         <div className="phStickyWrap">
             <header id="pageHeader" className="bg-white">
-                <div className="hdTopBar py-2 py-xl-3 bg-dark d-md-block">
+                <div className="hdTopBar py-2 py-xl-3 bg-dark d-none d-md-block">
                     <div className="container">
                         <div className="row align-items-center">
-                            <div className="col-9 col-lgwd-8">
+                            <div className="col-9 col-lg-8">
                                 <div className="topNews d-flex align-items-center overflow-hidden">
                                     <div className="cityNewsSlider w-100">
                                         <div className='text-white'>
@@ -31,26 +31,26 @@ const Header = ({ menudata }) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-3 col-lgwd-4">
+                            <div className="col-3 col-lg-4">
                                 <ul className="list-unstyled socialNetworks hdSocialNetworks d-flex justify-content-end flex-wrap mb-0">
                                     <li>
                                         <a href="/">
                                             <i className="fab fa-facebook-square">
-                                                <span className="sr-only">facebook</span>
+                                                <span className="sr-only">Facebook</span>
                                             </i>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="/">
                                             <i className="fab fa-twitter">
-                                                <span className="sr-only">twitter</span>
+                                                <span className="sr-only">Twitter</span>
                                             </i>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="/">
                                             <i className="fab fa-instagram">
-                                                <span className="sr-only">instagram</span>
+                                                <span className="sr-only">Instagram</span>
                                             </i>
                                         </a>
                                     </li>

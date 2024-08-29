@@ -16679,3 +16679,42 @@ textarea {
     z-index: 0;
     border: 0;
 }
+.custom-mobile-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-item {
+    margin-bottom: 10px; /* Adjust spacing between menu items */
+}
+
+.menu-item a {
+    color: #333; /* Adjust link color */
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item a:hover {
+    background-color: #f0f0f0; /* Adjust hover background color */
+}
+
+.menu-item-has-children > a::after {
+    content: '\25BC'; /* Unicode for down arrow */
+    margin-left: 5px;
+}
+
+.sub-menu {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sub-menu .menu-item {
+    margin-left: 10px; /* Adjust spacing for sub-menu items */
+}
+
+.sub-menu .menu-item a {
+    padding: 5px 10px; /* Adjust padding for sub-menu links */
+}

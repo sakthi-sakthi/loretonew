@@ -5,6 +5,18 @@
     overflow: hidden;
 }
 
+@media (max-width: 768px) {
+    .carousel {
+        height: 14vh !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel {
+        height: 30vh;
+    }
+}
+
 .carousel .carousel-inner {
     position: relative;
     width: 100%;
