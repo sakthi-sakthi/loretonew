@@ -35,19 +35,19 @@ const Footer = () => {
                                 </div>
                                 <ul className="list-unstyled ftsrLinksList mb-0 text-white">
                                     <li>
-                                        <Link to={'/aboutus'}> History</Link>
+                                        <Link to={'/aboutus'} className="social-links"> History</Link>
                                     </li>
                                     <li>
-                                        <Link to={'/newsletter'}> Newsletter</Link>
+                                        <Link to={'/newsletter'} className="social-links"> Newsletter</Link>
                                     </li>
                                     <li>
-                                        <Link to={'/loreto-india'}> Loreto in India</Link>
+                                        <Link to={'/loreto-india'} className="social-links"> Loreto in India</Link>
                                     </li>
                                     <li>
-                                        <Link to={'/fcra'}> Education</Link>
+                                        <Link to={'/fcra'} className="social-links"> Education</Link>
                                     </li>
                                     <li>
-                                        <Link to={'/contactus'}> Contact Us</Link>
+                                        <Link to={'/contactus'} className="social-links"> Contact Us</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -71,7 +71,9 @@ const Footer = () => {
                                             <span className="theme-clr">
                                                 <i className="fa fa-phone" aria-hidden="true" />
                                             </span>
-                                            &nbsp;&nbsp;033-4006 1156
+                                            <a href='mailto:provsecsa@loreto.in' className="social-links">
+                                                033-4006 1156
+                                            </a>
                                         </p>
                                     </li>
                                     <li>
@@ -79,7 +81,7 @@ const Footer = () => {
                                             <span className="theme-clr">
                                                 <i className="fa fa-envelope" aria-hidden="true" />
                                             </span>
-                                            &nbsp;&nbsp;provsecsa@loreto.in
+                                            <a href="tel:033-4006 1156" className="social-links">provsecsa@loreto.in</a>
                                         </p>
                                     </li>
                                 </ul>
@@ -111,7 +113,7 @@ const Footer = () => {
             >
                 <div className="container">
                     <p className='text-white'>
-                        <a href="home.html">© Copyright 2024 BoscoSoft Technologies</a>
+                        <a href="https://boscosofttech.com/" target='_blank' rel="noreferrer" className="social-links">© Copyright 2024 BoscoSoft Technologies</a>
                         <br className="d-md-none" />
                         &nbsp;All Rights Reserved
                     </p>

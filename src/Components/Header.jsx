@@ -25,8 +25,8 @@ const Header = ({ menudata }) => {
                                 <div className="topNews d-flex align-items-center overflow-hidden">
                                     <div className="cityNewsSlider w-100">
                                         <div className='text-white'>
-                                            <i className="icn fa fa-envelope mr-2" /> provsecsa@loreto.in
-                                            <i className="icn fa fa-phone ml-4 mr-2" />033-4006 1156
+                                            <i className="icn fa fa-envelope mr-2" /><a href='mailto:provsecsa@loreto.in' className="social-links">provsecsa@loreto.in</a>
+                                            <i className="icn fa fa-phone ml-4 mr-2" /><a href="tel:033-4006 1156" className="social-links">033-4006 1156</a>
                                         </div>
                                     </div>
                                 </div>

@@ -71,7 +71,9 @@ const UpcomingEvents = () => {
                                                 </div>
                                                 <div className="ueDescriptionWrap pt-5 pb-8 px-5">
                                                     <h3 className="h3Small fwMedium">
-                                                        <a href="/">{event?.name}</a>
+                                                        <Link to={`/all-upcome-news?newsid=${encodeURIComponent(
+                                                            btoa(event.id)
+                                                        )}`}>{event?.name}</Link>
                                                     </h3>
                                                     <Link to={`/all-upcome-news?newsid=${encodeURIComponent(
                                                         btoa(event.id)
