@@ -122,7 +122,7 @@ const Gallery = () => {
                 })}
                 {birthday?.length >= 5 && (
                   <div style={{ textAlign: 'center', marginTop: '10px', fontSize: '12px' }}>
-                    <a href="/birthday-calendar" className="btn btn-primary btn-sm" style={{ borderRadius: '50px' }}>View All</a>
+                    <a href="/birthday-calendar" className="btn btn-primary btn-sm theme-btn" style={{ borderRadius: '50px' }}>View All</a>
                   </div>
                 )}
               </div>
