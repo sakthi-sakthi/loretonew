@@ -16806,7 +16806,7 @@ textarea {
   .nav-mobile .menu-container .menu-sidebar {
     box-shadow: 5px 0 5px -5px #333;
     display: block;
-    width: 90vw;
+    width: 85vw;
     bottom: 0;
     background: white;
     color: #333;
@@ -16895,3 +16895,4 @@ textarea {
     z-index: 1;
     transition: width 0.35s cubic-bezier(0, 0, 0.3, 1);
   }
+  

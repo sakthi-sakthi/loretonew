@@ -46,7 +46,7 @@ const HousePrayer = () => {
                 {Object.entries(groupedData)?.map(([year, yearData]) => (
                     <React.Fragment key={year}>
                         <h4 className="text-center">{`HOUSE OF PRAYER ${year}`}</h4>
-                        <Table striped bordered hover className="custom-table">
+                        <Table striped bordered responsive hover className="custom-table">
                             <thead>
                                 <tr>
                                     <th>S.No</th>

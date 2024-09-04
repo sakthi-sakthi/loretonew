@@ -125,50 +125,52 @@ const Header = ({ menudata }) => {
                 </div>
             </header>
             <ul className="nav-mobile">
-                    <li></li>
-                    <li className="menu-container">
-                        <input id="menu-toggle" type="checkbox" />
-                        <label htmlFor="menu-toggle" className="menu-button">
-                            <svg className="icon-open" viewBox="0 0 24 24">
-                                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
-                            </svg>
-                        </label>
-                        <ul className="menu-sidebar">
-                            {menudata?.map((menuItem, index) => (
-                                <li key={index}>
-                                    {menuItem.children ? (
-                                        <>
-                                            <input type="checkbox" id={`sub-menu-${index}`} className="submenu-toggle" />
-                                            <label htmlFor={`sub-menu-${index}`} className={`menu-item-label ${menuItem.children.some(child => url.includes(child.url)) ? "activemain" : ""}`}>
-                                                {menuItem.label}
-                                                <i className="fa fa-angle-down" style={{ marginLeft: "5px" }} />
-                                            </label>
-                                            <ul className="menu-sub">
-                                                <li className="menu-sub-title">
-                                                    <label className="submenu-label" htmlFor={`sub-menu-${index}`}>
-                                                        Back
-                                                    </label>
-                                                    <div className="arrow left">‹</div>
-                                                </li>
-                                                {menuItem.children?.map((subItem, subIndex) => (
-                                                    <li key={subIndex} className={`menu-sub-title ${url === subItem.url ? "active" : ""}`}>
-                                                        <Link to={subItem.url} className="nav-link">
-                                                            {subItem.label}
-                                                        </Link>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        </>
-                                    ) : (
-                                        <Link to={menuItem.url} className={`${url === menuItem.url ? "activemain" : ""}`}>
+                <li></li>
+                <li className="menu-container">
+                    <input id="menu-toggle" type="checkbox" />
+                    <label htmlFor="menu-toggle" className="menu-button">
+                        <svg className="icon-open" viewBox="0 0 24 24">
+                            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                        </svg>
+                    </label>
+                    <ul className="menu-sidebar">
+                        <h3 className='text-left ml-3 mt-2'>Loreto Sisters</h3>
+                        <div className="arrow right" onClick={() => document.getElementById("menu-toggle").checked = false}><i className='fa fa-close' style={{ fontSize: "20px" }}></i></div>
+                        {menudata?.map((menuItem, index) => (
+                            <li key={index}>
+                                {menuItem.children ? (
+                                    <>
+                                        <input type="checkbox" id={`sub-menu-${index}`} className="submenu-toggle" />
+                                        <label htmlFor={`sub-menu-${index}`} className={`menu-item-label ${menuItem.children.some(child => url.includes(child.url)) ? "activemain" : ""}`}>
                                             {menuItem.label}
-                                        </Link>
-                                    )}
-                                </li>
-                            ))}
-                        </ul>
-                    </li>
-                </ul>
+                                            <i className="fa fa-angle-down" style={{ marginLeft: "5px" }} />
+                                        </label>
+                                        <ul className="menu-sub">
+                                            <li className="menu-sub-title">
+                                                <label className="submenu-label" htmlFor={`sub-menu-${index}`}>
+                                                    Back
+                                                </label>
+                                                <div className="arrow left">‹</div>
+                                            </li>
+                                            {menuItem.children?.map((subItem, subIndex) => (
+                                                <li key={subIndex} className={`menu-sub-title ${url === subItem.url ? "active" : ""}`}>
+                                                    <a href={subItem.url} className="nav-link">
+                                                        {subItem.label}
+                                                    </a>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </>
+                                ) : (
+                                    <a href={menuItem.url} className={`${url === menuItem.url ? "activemain" : ""}`}>
+                                        {menuItem.label}
+                                    </a>
+                                )}
+                            </li>
+                        ))}
+                    </ul>
+                </li>
+            </ul>
         </div>
     );
 };

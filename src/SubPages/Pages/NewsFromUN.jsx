@@ -1,29 +1,12 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { Table } from "react-bootstrap";
+import { BsEye, BsDownload } from "react-icons/bs";
 import { ApiUrl } from "../../Api/ApiUrl";
 
 function NewsFromUN() {
     const [pdfLinks, setPdfLinks] = useState([]);
-    const [mainAccordionOpen, setMainAccordionOpen] = useState(true);
-    const [subAccordionOpen, setSubAccordionOpen] = useState({});
     const [loading, setLoading] = useState(true);
-    const handleMainAccordionClick = () => {
-        setMainAccordionOpen((prevState) => !prevState);
-        setSubAccordionOpen((prevState) => ({
-            ...prevState,
-            [new Date().getFullYear()]: !prevState[new Date().getFullYear()],
-        }));
-    };
-
-    const handleMouseEnter = (event) => {
-        event.currentTarget.style.overflowY = "scroll";
-    };
-
-    const handleMouseLeave = (event) => {
-        event.currentTarget.style.overflowY = "hidden";
-    };
 
     useEffect(() => {
         axios
@@ -38,12 +21,6 @@ function NewsFromUN() {
                 });
 
                 setPdfLinks(currentYearPdfLinks);
-
-                setMainAccordionOpen(true);
-                setSubAccordionOpen((prevState) => ({
-                    ...prevState,
-                    [new Date().getFullYear()]: true,
-                }));
                 setLoading(false);
             })
             .catch((error) => {
@@ -61,125 +38,47 @@ function NewsFromUN() {
             {loading ? (
                 <div className="text-center mt-5"><b>Loading...</b></div>
             ) : (
-                <div className="container subpage mt-5">
-                    <h3 className="text-black entry-title">NEWS FROM THE LORETO U.N NGO</h3>
-                    <br />
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <div className="row">
-                                <div
-                                    className="col-12 col-lg-12 custom-scrollbar">
-                                    <div className="accordion" id="newsletterAccordion">
-                                        <div className="accordion-item mb-4">
-                                            <h2 className="accordion-header" onClick={handleMainAccordionClick}>
-                                                <button
-                                                    className="accordion-button"
-                                                    type="button"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#allNewsletters"
-                                                    aria-expanded={mainAccordionOpen ? "true" : "false"}
-                                                    aria-controls="allNewsletters"
-                                                    style={{ fontWeight: "bold", backgroundColor: "rgb(128 0 0)", color: "#f5c83f" }}>
-                                                    News From the Loreto U.N NGO - {new Date().getFullYear()}
-                                                </button>
-                                            </h2>
-                                            <div
-                                                id="allNewsletters"
-                                                className={`accordion-collapse collapse ${mainAccordionOpen ? "show" : ""}`}
-                                                aria-labelledby="allNewsletters"
-                                                data-parent="#newsletterAccordion"
-                                                onMouseEnter={handleMouseEnter}
-                                                onMouseLeave={handleMouseLeave} style={{ height: "555px", overflowY: "scroll" }}>
-                                                <div className="accordion-body">
-                                                    {pdfLinks.length > 0 ? (
-                                                        pdfLinks
-                                                            .reduce((acc, pdf) => {
-                                                                const existingMonth = acc.find(
-                                                                    (item) => item.month === pdf.month
-                                                                );
-                                                                if (existingMonth) {
-                                                                    existingMonth.pdfs.push(pdf);
-                                                                } else {
-                                                                    acc.push({ month: pdf.month, pdfs: [pdf] });
-                                                                }
-                                                                return acc;
-                                                            }, [])
-                                                            .map((monthGroup, index) => (
-                                                                <div key={index}>
-                                                                    <div className="accordion-item">
-                                                                        <h2 className="accordion-header">
-                                                                            <button
-                                                                                className="accordion-button"
-                                                                                type="button"
-                                                                                data-bs-toggle="collapse"
-                                                                                data-bs-target={`#collapse${index}`}
-                                                                                aria-expanded={subAccordionOpen[new Date().getFullYear()] ? "true" : "false"}
-                                                                                aria-controls={`collapse${index}`}
-                                                                                onClick={(event) => {
-                                                                                    const clickedElement = event.target;
-                                                                                    const isSubAccordion = clickedElement.closest(
-                                                                                        ".accordion-collapse"
-                                                                                    );
-
-                                                                                    if (!isSubAccordion) {
-                                                                                        const mainAccordion = document.getElementById(
-                                                                                            "allNewsletters"
-                                                                                        );
-                                                                                        if (mainAccordion) mainAccordion.classList.remove("show");
-                                                                                    }
-                                                                                }}
-                                                                                style={{ fontWeight: "bold" }}>
-                                                                                {new Date().getFullYear()}
-                                                                            </button>
-                                                                        </h2>
-                                                                        <div
-                                                                            id={`collapse${index}`}
-                                                                            className={`accordion-collapse collapse ${subAccordionOpen[new Date().getFullYear()] ? "show" : ""
-                                                                                }`}
-                                                                            aria-labelledby={`heading${index}`}
-                                                                            data-parent="#newsletterAccordion">
-                                                                            <div className="accordion-body">
-                                                                                {monthGroup.pdfs.map((pdf, pdfIndex) => (
-                                                                                    <div key={pdfIndex}>
-                                                                                        <p>
-                                                                                            <b>{pdf.title} </b>
-                                                                                        </p>
-                                                                                        <p>{pdf.eventdate}</p>
-                                                                                        <a
-                                                                                            href={pdf.file_url}
-                                                                                            rel="noopener noreferrer"
-                                                                                            className="btn btn-sm"
-                                                                                            target="_blank"
-                                                                                            style={{
-                                                                                                backgroundColor: "#012c6d",
-                                                                                                color: "#e0ab08",
-                                                                                                textDecoration: "none",
-                                                                                            }}>
-                                                                                            <FontAwesomeIcon icon={faDownload} /> Download
-                                                                                        </a>
-                                                                                        <br />
-                                                                                        <br />
-                                                                                    </div>
-                                                                                ))}
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            ))
-                                                    ) : (
-                                                        <p className="text-center font-weight-bold" style={{ fontSize: "16px", fontWeight: "600" }}>
-                                                            No Data Available
-                                                        </p>
-                                                    )}
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div >
+                <div className="container subpage">
+                    <h3 className="text-black text-center entry-title">NEWS FROM THE LORETO U.N NGO</h3>
+                    <Table striped bordered hover responsive className="custom-table">
+                        <thead>
+                            <tr>
+                                <th>S.No</th>
+                                <th>Title</th>
+                                <th>Date</th>
+                                <th>View</th>
+                                <th>Download</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {pdfLinks.length > 0 ? (
+                                pdfLinks.map((pdf, index) => (
+                                    <tr key={index}>
+                                        <td>{index + 1}</td>
+                                        <td>{pdf.title}</td>
+                                        <td>{pdf.eventdate}</td>
+                                        <td className="text-center">
+                                            <a href={pdf.file_url} target="_blank" rel="noopener noreferrer">
+                                                <BsEye size={20} />
+                                            </a>
+                                        </td>
+                                        <td className="text-center">
+                                            <a href={pdf.file_url} download rel="noopener noreferrer" >
+                                                <BsDownload size={20} />
+                                            </a>
+                                        </td>
+                                    </tr>
+                                ))
+                            ) : (
+                                <tr>
+                                    <td colSpan="4" className="text-center font-weight-bold" style={{ fontSize: "16px", fontWeight: "600" }}>
+                                        No Data Available
+                                    </td>
+                                </tr>
+                            )}
+                        </tbody>
+                    </Table>
+                </div>
             )}
         </>
     );

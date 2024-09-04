@@ -33,7 +33,7 @@ const ProvinceNewsLetter = () => {
     return (
         <div className="custom-table-container mt-5">
             <h3 className="text-center">PROVINCE NEWSLETTER</h3>
-            <Table striped bordered hover className="custom-table">
+            <Table striped bordered hover responsive className="custom-table">
                 <thead>
                     <tr>
                         <th>S.No</th>

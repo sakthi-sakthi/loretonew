@@ -14,6 +14,7 @@ import LoretoSister from "./SubPages/Pages/LoretoSister";
 import ContactUs from "./SubPages/Pages/ContactUs";
 import AllUpcomeEvent from "./SubPages/Pages/AllUpcomeEvent";
 import BirthdayCalendar from "./SubPages/Pages/Calendar";
+import NewsFromUN from "./SubPages/Pages/NewsFromUN";
 function App() {
 
   return (
@@ -54,6 +55,7 @@ function App() {
             <Route path="contactus" element={<ContactUs />}></Route>
             <Route path="all-upcome-news" element={<AllUpcomeEvent />}></Route>
             <Route path="birthday-calendar" element={<BirthdayCalendar />}></Route>
+            <Route path="news-un" element={<NewsFromUN />}></Route>
           </Route>
         </Routes>
       </Router>
