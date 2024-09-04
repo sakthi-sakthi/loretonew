@@ -45,7 +45,7 @@
 .sound-title {
   color: black;
   font-weight: 500;
-  font-size: calc(12px + 1vw);
+  font-size:calc(3px + 1vw);
 
   color: #012c6d !important;
   margin: 0;
@@ -352,7 +352,7 @@
 }
 .app-title {
   color: #012c6d !important;
-  font-size: 1.9rem;
+  font-size: 20px;
   margin: 0;
   margin-bottom: 15px;
 }

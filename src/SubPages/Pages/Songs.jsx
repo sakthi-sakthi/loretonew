@@ -204,7 +204,7 @@ const Songs = () => {
                                                 <td>{index + 1}</td>
                                                 <td onClick={() => handleSongSelect(song)}>{song?.title}</td>
                                                 <td>{currentSong && currentSong?.id === song?.id ? 'Yes' : 'No'}</td>
-                                                <td>
+                                                {/* <td>
                                                     {currentSong && currentSong?.id === song?.id && isPlaying ? (
                                                         <button onClick={stopSong} className='btn btn-priamry'>
                                                             <i className="fas fa-stop"></i>
@@ -214,7 +214,7 @@ const Songs = () => {
                                                             <i className="fas fa-play"></i>
                                                         </button>
                                                     )}
-                                                </td>
+                                                </td> */}
                                                 <td>
                                                     <button onClick={() => handleDownload(song)} className='btn btn-priamry' title='Download Song'>
                                                         <i className="fas fa-download"></i>

@@ -95,7 +95,7 @@ const Footer = () => {
                                 <ul className="list-unstyled ftsrLinksList mb-0">
                                     <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.7730007234613!2d88.34968917593255!3d22.550174633790775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02771079019917%3A0x936dfcbc761465b5!2s7%2C%20Sir%20William%20Jones%20Sarani%2C%20Park%20Street%20area%2C%20Kolkata%2C%20West%20Bengal%20700071!5e0!3m2!1sen!2sin!4v1710998858380!5m2!1sen!2sin"
-                                        style={{ border: 0, height: '150px', width: "300px" }}
+                                        style={{ border: 0, height: '150px', width: "250px" }}
                                         allowFullScreen=""
                                         loading="lazy"
                                         title='loreto'
