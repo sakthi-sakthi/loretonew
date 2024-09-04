@@ -101,18 +101,18 @@ const Songs = () => {
         song.title.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
-    const handlePlay = (song) => {
-        if (currentSong && currentSong?.id === song.id) {
-            if (isPlaying) {
-                pauseSong();
-            } else {
-                playSong(song);
-            }
-        } else {
-            setCurrentSong(song);
-            playSong(song);
-        }
-    };
+    // const handlePlay = (song) => {
+    //     if (currentSong && currentSong?.id === song.id) {
+    //         if (isPlaying) {
+    //             pauseSong();
+    //         } else {
+    //             playSong(song);
+    //         }
+    //     } else {
+    //         setCurrentSong(song);
+    //         playSong(song);
+    //     }
+    // };
     
 
     useEffect(() => {
