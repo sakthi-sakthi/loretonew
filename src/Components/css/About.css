@@ -3,7 +3,7 @@
     padding: 18px 0;
     background-size: cover;
     background-image: url(https://cms.loreto.in/slideimages/slide2.jpg);
-    z-index: 99;
+    z-index: 1;
 }
 
 .welcome-content .entry-title {

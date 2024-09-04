@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <div className="banner-img">
       <Link to={'/'}>
-        <img src="images/loretonewlogo.jpg" className="img-fluid w-100 h-100" alt="Responsive" />
+        <img src="assets/images/loretonewlogo.jpg" className="img-fluid w-100 h-100" alt="Responsive" />
       </Link>
     </div>
   )

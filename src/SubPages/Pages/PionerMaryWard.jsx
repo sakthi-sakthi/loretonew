@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/maryward.css';
 
 const PionerMaryWard = () => {
-    const pdfPath = '/images/subpages/MW.pdf';
+    const pdfPath = 'assets/images/subpages/MW.pdf';
 
     return (
         <div className="pdf-viewer-container mt-5">

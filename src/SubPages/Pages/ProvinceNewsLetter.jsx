@@ -38,7 +38,6 @@ const ProvinceNewsLetter = () => {
                     <tr>
                         <th>S.No</th>
                         <th>NewsLetter Title</th>
-                        <th>Theme</th>
                         <th>Month</th>
                         <th>Year</th>
                         <th>View</th>
@@ -58,7 +57,6 @@ const ProvinceNewsLetter = () => {
                                 <tr key={item.id}>
                                     <td>{index + 1}</td>
                                     <td title={item?.name}>{item?.name}</td>
-                                    <td title={item?.theme}>{item?.theme}</td>
                                     <td title={getMonthName(item?.month)}>{getMonthName(item?.month)}</td>
                                     <td title={item?.year}>{item?.year}</td>
                                     <td>

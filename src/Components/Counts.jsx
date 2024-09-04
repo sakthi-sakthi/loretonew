@@ -79,7 +79,7 @@ const Counts = () => {
             </div>
             <span
                 className="cfbBgWrap bgCover position-absolute h-100 w-100 inaccessible"
-                style={{ backgroundImage: "url(images/bg01.png)" }}
+                style={{ backgroundImage: "url(assets/images/bg01.png)" }}
             />
         </aside>
     );

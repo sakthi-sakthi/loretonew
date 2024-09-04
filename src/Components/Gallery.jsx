@@ -78,10 +78,9 @@ const Gallery = () => {
                   return (
                     <div key={index}>
                       <div className="birthday-box">
-                        <img className="img-responsive img-style" id="imgstyles" src={item?.image || 'images/noimage.avif'} alt="img" />
+                        <img className="img-responsive img-style" id="imgstyles" src={item?.image || 'assets/images/noimage.avif'} alt="img" />
                         <div className="emp_details">
                           <p style={{ color: '#337ab7' }}>{item?.member_name || 'No Name'}</p>
-                          <p>{item?.community_id || ''}</p>
                           <p>{item?.dob || 'No DOB'}</p>
                         </div>
                         {isToday && (
@@ -89,7 +88,7 @@ const Gallery = () => {
                             <div className="birth_style">
                               <div style={{ position: 'relative' }}>
                                 <img
-                                  src="images/bday.gif"
+                                  src="assets/images/bday.gif"
                                   style={{
                                     height: 'auto',
                                     width: '100px',
@@ -100,7 +99,7 @@ const Gallery = () => {
                                   alt="nodata"
                                 />
                                 <img
-                                  src="images/popper.gif"
+                                  src="assets/images/popper.gif"
                                   style={{
                                     position: 'absolute',
                                     top: '17px',
@@ -121,9 +120,9 @@ const Gallery = () => {
                     </div>
                   );
                 })}
-                {birthday.length >= 5 && (
+                {birthday?.length >= 5 && (
                   <div style={{ textAlign: 'center', marginTop: '10px', fontSize: '12px' }}>
-                    <a href="/" className="btn btn-primary btn-sm" style={{ borderRadius: '50px' }}>View All</a>
+                    <a href="/birthday-calendar" className="btn btn-primary btn-sm" style={{ borderRadius: '50px' }}>View All</a>
                   </div>
                 )}
               </div>

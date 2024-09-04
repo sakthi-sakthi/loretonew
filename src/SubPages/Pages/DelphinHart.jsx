@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/maryward.css';
 
 const DelphineHart = () => {
-    const pdfPath = '/images/subpages/DH.pdf';
+    const pdfPath = 'assets/images/subpages/DH.pdf';
 
     return (
         <div className="pdf-viewer-container mt-5">

@@ -13,6 +13,7 @@ import ProvinceNewsLetter from "./SubPages/Pages/ProvinceNewsLetter";
 import LoretoSister from "./SubPages/Pages/LoretoSister";
 import ContactUs from "./SubPages/Pages/ContactUs";
 import AllUpcomeEvent from "./SubPages/Pages/AllUpcomeEvent";
+import BirthdayCalendar from "./SubPages/Pages/Calendar";
 function App() {
 
   return (
@@ -52,6 +53,7 @@ function App() {
             <Route path="friends-mary-ward" element={<LoretoSister />}></Route>
             <Route path="contactus" element={<ContactUs />}></Route>
             <Route path="all-upcome-news" element={<AllUpcomeEvent />}></Route>
+            <Route path="birthday-calendar" element={<BirthdayCalendar />}></Route>
           </Route>
         </Routes>
       </Router>

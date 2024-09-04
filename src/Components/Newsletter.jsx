@@ -42,7 +42,7 @@ const Newsletter = () => {
                                     <div className="d-flex mb-3">
                                         <span className="icnWrap flex-shrink-0 pt-1 mr-3">
                                             <img
-                                                src="images/document.png"
+                                                src="assets/images/document.png"
                                                 className="img-fluid"
                                                 alt="icon"
                                                 style={{ height: '50px' }}
@@ -58,7 +58,7 @@ const Newsletter = () => {
                                         </div>
                                         <span className="ml-auto">
                                             <a href={item?.upload} download>
-                                                <img src='images/df.webp' style={{ height: '60px' }} alt="nodata"></img>
+                                                <img src='assets/images/df.webp' style={{ height: '60px' }} alt="nodata"></img>
                                             </a>
                                         </span>
                                     </div>
@@ -84,10 +84,10 @@ const Newsletter = () => {
                         ))}
                     </div>
                 </div>
-                <span
+                {/* <span
                     className="npbBgPattern w-100 h-100 bgCover position-absolute inaccessible"
                     style={{ backgroundImage: "url(images/bgPattern2.jpg)" }}
-                />
+                /> */}
             </section>
         </>
     );

@@ -626,7 +626,9 @@ pre code {
     padding-right: 15px;
     padding-left: 15px;
 }
-
+.npbHolder {
+    z-index: 1;
+}
 .col {
     -ms-flex-preferred-size: 0;
         flex-basis: 0;

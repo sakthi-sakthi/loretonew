@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Collapse } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Banner from './Banner';
 
 const Header = ({ menudata }) => {
@@ -14,6 +14,9 @@ const Header = ({ menudata }) => {
     const handleSubMenuClick = (index) => {
         setActiveSubMenu(activeSubMenu === index ? null : index);
     };
+
+    const location = useLocation();
+    const url = location.pathname;
 
     return (
         <div className="phStickyWrap">
@@ -59,8 +62,9 @@ const Header = ({ menudata }) => {
                         </div>
                     </div>
                 </div>
+                <div className="hdFixerWrap py-2 py-md-3 py-xl-5 sSticky bg-white d-block d-lg-none"></div>
                 <Banner />
-                <div className="hdFixerWrap py-2 py-md-3 py-xl-5 sSticky bg-white">
+                <div className="hdFixerWrap py-2 py-md-3 py-xl-5 sSticky bg-white d-none d-md-block">
                     <div className="container">
                         <nav className="navbar navbar-expand-md navbar-light p-0">
                             <div className="hdNavWrap flex-grow-1 d-flex align-items-center justify-content-center">
@@ -120,6 +124,51 @@ const Header = ({ menudata }) => {
                     </div>
                 </div>
             </header>
+            <ul className="nav-mobile">
+                    <li></li>
+                    <li className="menu-container">
+                        <input id="menu-toggle" type="checkbox" />
+                        <label htmlFor="menu-toggle" className="menu-button">
+                            <svg className="icon-open" viewBox="0 0 24 24">
+                                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                            </svg>
+                        </label>
+                        <ul className="menu-sidebar">
+                            {menudata?.map((menuItem, index) => (
+                                <li key={index}>
+                                    {menuItem.children ? (
+                                        <>
+                                            <input type="checkbox" id={`sub-menu-${index}`} className="submenu-toggle" />
+                                            <label htmlFor={`sub-menu-${index}`} className={`menu-item-label ${menuItem.children.some(child => url.includes(child.url)) ? "activemain" : ""}`}>
+                                                {menuItem.label}
+                                                <i className="fa fa-angle-down" style={{ marginLeft: "5px" }} />
+                                            </label>
+                                            <ul className="menu-sub">
+                                                <li className="menu-sub-title">
+                                                    <label className="submenu-label" htmlFor={`sub-menu-${index}`}>
+                                                        Back
+                                                    </label>
+                                                    <div className="arrow left">‹</div>
+                                                </li>
+                                                {menuItem.children?.map((subItem, subIndex) => (
+                                                    <li key={subIndex} className={`menu-sub-title ${url === subItem.url ? "active" : ""}`}>
+                                                        <Link to={subItem.url} className="nav-link">
+                                                            {subItem.label}
+                                                        </Link>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </>
+                                    ) : (
+                                        <Link to={menuItem.url} className={`${url === menuItem.url ? "activemain" : ""}`}>
+                                            {menuItem.label}
+                                        </Link>
+                                    )}
+                                </li>
+                            ))}
+                        </ul>
+                    </li>
+                </ul>
         </div>
     );
 };
