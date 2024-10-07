@@ -25,7 +25,7 @@ const Footer = () => {
                                 </p>
                             </div>
                             <p className='text-white text-justify'>
-                                We are known informally as Loreto Sisters. The IBVM comprised of three branches:
+                                We are known informally as Loreto Sisters. The IBVM comprised of three branches.
                             </p>
                         </div>
                         <div className="col-lg-2 col-md-6 col-sm-12">

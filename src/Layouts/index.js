@@ -37,8 +37,8 @@ const MainLayout = () => {
             >
                 <ThreeDots
                     visible={true}
-                    width="50"
-                    height="50"
+                    width="40"
+                    height="40"
                     color="#012c6d !important"
                     ariaLabel="three-dots-loading"
                 />

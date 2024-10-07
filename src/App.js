@@ -15,6 +15,7 @@ import ContactUs from "./SubPages/Pages/ContactUs";
 import AllUpcomeEvent from "./SubPages/Pages/AllUpcomeEvent";
 import BirthdayCalendar from "./SubPages/Pages/Calendar";
 import NewsFromUN from "./SubPages/Pages/NewsFromUN";
+import Blog from "./SubPages/Pages/Blog";
 function App() {
 
   return (
@@ -56,6 +57,7 @@ function App() {
             <Route path="all-upcome-news" element={<AllUpcomeEvent />}></Route>
             <Route path="birthday-calendar" element={<BirthdayCalendar />}></Route>
             <Route path="news-un" element={<NewsFromUN />}></Route>
+            <Route path="blog" element={<Blog />}></Route>
           </Route>
         </Routes>
       </Router>

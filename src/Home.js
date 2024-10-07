@@ -17,16 +17,20 @@ const Home = () => {
     const [Homedata, setHomedata] = useState(null);
     const [loading, setLoading] = useState(true);
 
+    // Fetch data from API
     useEffect(() => {
-        axios.get(`${ApiUrl}/get/homepagee/sections`)
-            .then(response => {
+        const fetchData = async () => {
+            try {
+                const response = await axios.get(`${ApiUrl}/get/homepagee/sections`);
+                localStorage.setItem("HomeData", JSON.stringify(response?.data?.data));
                 setHomedata(response?.data?.data);
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            } finally {
                 setLoading(false);
-            })
-            .catch(error => {
-                console.error("Error fetching home data:", error);
-                setLoading(false);
-            });
+            }
+        };
+        fetchData();
     }, []);
 
     return (
@@ -42,8 +46,8 @@ const Home = () => {
                 >
                     <ThreeDots
                         visible={true}
-                        width={50}
-                        height={50}
+                        width={40}
+                        height={40}
                         color="#012c6d !important"
                         ariaLabel="ThreeDots-loading"
                     />
@@ -52,7 +56,7 @@ const Home = () => {
             {!loading && (
                 <>
                     <Header menudata={Homedata?.headermenudata} />
-                    <Slider sliderdata={Homedata?.SlidesData}/>
+                    <Slider sliderdata={Homedata?.SlidesData} />
                     <FlashNews />
                     <About />
                     <UpcomingEvents />
