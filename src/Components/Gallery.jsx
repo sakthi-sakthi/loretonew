@@ -84,7 +84,7 @@ const Gallery = () => {
                           <p>{item?.dob || 'No DOB'}</p>
                         </div>
                         {isToday && (
-                          <div style={{ marginTop: '-16%', marginLeft: '65%' }}>
+                          <div style={{ marginTop: '-11%', marginLeft: '65%' }}>
                             <div className="birth_style">
                               <div style={{ position: 'relative' }}>
                                 <img
