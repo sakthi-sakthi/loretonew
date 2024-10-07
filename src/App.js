@@ -6,7 +6,6 @@ import History from "./SubPages/History/History";
 import HousePrayer from "./SubPages/Pages/Houseofprayer";
 import DelphineHart from "./SubPages/Pages/DelphinHart";
 import TeresaBall from "./SubPages/Pages/TeresaBall";
-import PionerMaryWard from "./SubPages/Pages/PionerMaryWard";
 import Songs from "./SubPages/Pages/Songs";
 import Fcra from "./SubPages/Pages/Fcra";
 import ProvinceNewsLetter from "./SubPages/Pages/ProvinceNewsLetter";
@@ -16,6 +15,7 @@ import AllUpcomeEvent from "./SubPages/Pages/AllUpcomeEvent";
 import BirthdayCalendar from "./SubPages/Pages/Calendar";
 import NewsFromUN from "./SubPages/Pages/NewsFromUN";
 import Blog from "./SubPages/Pages/Blog";
+import PionerMaryWard from "./SubPages/Pages/PionerMaryWard";
 function App() {
 
   return (
@@ -44,6 +44,7 @@ function App() {
             <Route path="jpic" element={<History />}></Route>
             <Route path="become-loreto-sister" element={<History />}></Route>
             <Route path="house-prayers" element={<HousePrayer />}></Route>
+            <Route path="pioneers" element={<History />}></Route>
             <Route path="pioneers-mary-ward" element={<PionerMaryWard />}></Route>
             <Route path="delphine-hart" element={<DelphineHart />}></Route>
             <Route path="teresaball" element={<TeresaBall />}></Route>

@@ -26,7 +26,8 @@ function Whoweare() {
         "/lay-associates": 16,
         "/useful-links": 17,
         "/jpic": 18,
-        '/become-loreto-sister':20 
+        '/become-loreto-sister':20 ,
+        "/pioneers": 22,
     };
     const pageId = path[url] ? path[url] : url;
 

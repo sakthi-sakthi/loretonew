@@ -44,7 +44,7 @@ const Footer = () => {
                                         <Link to={'/loreto-india'} className="social-links"> Loreto in India</Link>
                                     </li>
                                     <li>
-                                        <Link to={'/fcra'} className="social-links"> Education</Link>
+                                        <Link to={'/education'} className="social-links"> Education</Link>
                                     </li>
                                     <li>
                                         <Link to={'/contactus'} className="social-links"> Contact Us</Link>
