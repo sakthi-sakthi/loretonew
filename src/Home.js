@@ -4,7 +4,7 @@ import Header from './Components/Header';
 import Slider from './Components/Slider';
 import FlashNews from './Components/FlashNews';
 import About from './Components/About';
-import Services from './Components/Services';
+// import Services from './Components/Services';
 import Counts from './Components/Counts';
 import UpcomingEvents from './Components/UpcomingEvents';
 import Newsletter from './Components/Newsletter';
@@ -61,7 +61,7 @@ const Home = () => {
                     <About />
                     <UpcomingEvents />
                     <Counts />
-                    <Services />
+                    {/* <Services /> */}
                     <Newsletter />
                     <Gallery />
                     <Footer />
