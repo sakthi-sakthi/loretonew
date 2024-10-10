@@ -12,9 +12,10 @@ const Slider = ({ sliderdata }) => {
             infiniteLoop={true}
             interval={5000}
             stopOnHover={true}
-            transitionTime={2000}
+            transitionTime={3000}
             swipeable={true}
             showArrows={true}
+            emulateTouch={true}
             className="carousel"
         >
             {sliderdata?.map((item, index) => (
